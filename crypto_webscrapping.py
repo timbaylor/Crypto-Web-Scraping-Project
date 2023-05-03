@@ -82,8 +82,8 @@ for x in range(1,6):
     client = Client(keys.accountSID, keys.authToken)
 
     # enter your own personal numbers
-    TwilioNumber = '+12544525613'
-    mycellphone = '+15126941668'
+    TwilioNumber = ''
+    mycellphone = ''
 
     if name == 'Bitcoin':
         if price_change >= 5:
