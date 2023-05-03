@@ -11,6 +11,6 @@ api_key_secret = ''
 bearer_token = ''
 
 
-# KEYS FOR TWILIO (enter your own personal)
+# KEYS FOR TWILIO (enter your own personal keys)
 accountSID = ''
 authToken = ''
