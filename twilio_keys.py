@@ -1,3 +1,5 @@
-# KEYS FOR TWILIO (enter your own personal keys)
+# keys for twilio
+# enter your own personal keys
+
 accountSID = ''
 authToken = ''
