@@ -3,19 +3,6 @@ from bs4 import BeautifulSoup
 import openpyxl as xl
 from openpyxl.styles import Font, Alignment
 
-
-#SOME USEFUL FUNCTIONS IN BEAUTIFULSOUP
-#-----------------------------------------------#
-# find(tag, attributes, recursive, text, keywords)
-# findAll(tag, attributes, recursive, text, limit, keywords)
-
-#Tags: find("h1","h2","h3", etc.)
-#Attributes: find("span", {"class":{"green","red"}})
-#Text: nameList = Objfind(text="the prince")
-#Limit = find with limit of 1
-#keyword: allText = Obj.find(id="title",class="text")
-
-
 url = 'https://www.coingecko.com/'
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.3'}
 
@@ -24,7 +11,6 @@ req = Request(url, headers=headers)
 webpage = urlopen(req).read()
 
 soup = BeautifulSoup(webpage, 'html.parser')
-
 # print(soup.title)
 
 # --------------------------------------------------
@@ -76,10 +62,10 @@ for x in range(1,6):
     # --------------------------------------------------
 
     # twilio text alert
-    import keys
+    import twilio_keys
     from twilio.rest import Client
 
-    client = Client(keys.accountSID, keys.authToken)
+    client = Client(twilio_keys.accountSID, twilio_keys.authToken)
 
     # enter your own personal numbers
     TwilioNumber = ''
