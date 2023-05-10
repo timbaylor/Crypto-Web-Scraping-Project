@@ -120,5 +120,5 @@ for cell in ws['F:F']:
     cell.number_format = u'"$ "#,##0.00'
     cell.alignment = Alignment(horizontal='center')
 
-# # save workbook
+# save workbook
 wb.save("CryptoReport.xlsx")
