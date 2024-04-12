@@ -1,4 +1,4 @@
-# Crypto-Web-Scraping-Project
+# Crypto-Web-Scraper
 
 Utilizes the HTML parser "BeautifulSoup" and the library "openpyxl" to scrape the current top 5 cryptocurrencies in the world from https://www.coingecko.com/ along with important statistics such as the current price, percentage change in the last 24 hours, and the price based on the percentage change. The information is then exported to a well formatted Excel spreadsheet report.
 
